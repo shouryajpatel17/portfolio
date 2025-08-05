@@ -1,0 +1,157 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0b1c2c; /* Deep navy blue background */
+  color: #0b1c2c;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #081521;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #1a2c42;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #90caf9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease-in;
+}
+
+h2 {
+  color: #0b1c2c;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th {
+  background-color: #e3f2fd;
+  color: #0b1c2c;
+}
+
+th, td {
+  border: 1px solid #90caf9;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+td a {
+  color: #1976d2;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+td a:hover {
+  color: #0b1c2c;
+}
+
+footer {
+  background-color: #081521;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 2px solid #1a2c42;
+  color: #ffffff;
+}
+
+footer ul.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+footer a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.toggle-btn {
+  background-color: #1e88e5;  /* Blue background */
+  color: white;               /* White text */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #1565c0;  /* Darker blue on hover */
+}
+/* Back Button */
+.back-button {
+  margin: 1.5rem 0;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #58a6ff;
+  font-weight: 600;
+  background-color: #0d1117;
+  padding: 0.5rem 1rem;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #161b22;
+}

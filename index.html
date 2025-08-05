@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shourya Jigesh Patel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .education-section img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid #0b1c2c;
+      border-radius: 8px;
+    }
+
+    .education-entry {
+      background-color: #f0f4f8;
+      color: #0b1c2c;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .read-more {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+    }
+
+    .read-more.expanded {
+      max-height: 500px; /* Adjust based on content */
+      transition: max-height 0.5s ease-in;
+    }
+
+    .toggle-btn {
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background-color: #1565c0;
+    }
+
+    header h1 a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      font-weight: 600;
+      color: #ffffff;
+    }
+  </style>
+  <script>
+    function toggleReadMore(id) {
+      const content = document.getElementById(id);
+      content.classList.toggle('expanded');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>
+  <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+    <img src="favicon.ico" alt="Logo" style="height: 40px; width: 40px; border-radius: 8px;" />
+    <span>Shourya Jigesh Patel</span>
+  </a>
+</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Research</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="lors.html">LORs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <div style="display: flex; gap: 2rem; align-items: center;">
+        <img src="shourya.jpg" alt="Shourya Patel" />
+        <p>Hi, I'm Shourya Patel — a passionate student currently pursuing biotechnology. I have a strong academic background in science, research, and innovation with interests in environmental science and sustainable development. I enjoy learning through exploration and hands-on work, especially in the field of biology and technology.</p>
+      </div>
+    </section>
+
+    <section class="education-section">
+      <h2>Education</h2>
+
+      <div class="education-entry">
+        <h3>School: MIT Pune's Vishwashanti Gurukul (An IB World School)</h3>
+        <img src="school.jpg" alt="MIT Pune Vishwashanti Gurukul" />
+        <p>I joined MIT Pune's Vishwashanti Gurukul in 2017 as a residential student in PYP 5 and continued through to IBDP Year 2. 
+          Over the years, the boarding environment and IB curriculum helped me grow into an independent, holistic learner, while nurturing my academic strengths and interdisciplinary thinking....</p>
+        <button class="toggle-btn" onclick="toggleReadMore('school-details')">Read More</button>
+        <div id="school-details" class="read-more">
+          <p>Over the years as an IB student at MIT Pune's Vishwashanti Gurukul, I gradually evolved into a more independent, holistic, and disciplined learner. The rigor and breadth of the IB curriculum challenged me to develop strong self-management and time management skills—balancing coursework, CAS commitments, and multiple deadlines across six demanding subjects. Through this, I learned to prioritize tasks, stay organized, and adapt to academic pressure.
+
+My research and inquiry skills grew steadily across the MYP and DP. Starting from the Personal Project in MYP 5 to the Extended Essay, Internal Assessments, and TOK in IBDP, I engaged in structured investigations that deepened my understanding of how to formulate meaningful questions, explore multiple perspectives, and synthesize information effectively.
+
+I also applied critical thinking and problem-solving across disciplines—whether it was debugging hundreds of lines of code for my Computer Science IA, designing a methodology to culture microorganisms in Biology, or improvising during an esterification experiment with limited lab equipment. These experiences taught me to think creatively, act resourcefully, and persist through uncertainty.
+
+Beyond academics, the IB fostered in me a global mindset, reflective habits, and a deep appreciation for interdisciplinary learning. It has prepared me not just for university, but for a lifelong journey of learning, leadership, and meaningful contribution to the world.</p>
+        </div>
+      </div>
+
+      <div class="education-entry">
+        <h3>University: Shoolini University</h3>
+        <img src="university.jpg" alt="Shoolini University" />
+        <p>I am currently pursuing my undergraduate degree in biotechnology at Shoolini University, one of India’s top-ranked private research institutions.</p>
+        <button class="toggle-btn" onclick="toggleReadMore('uni-details')">Read More</button>
+        <div id="uni-details" class="read-more">
+          <p>At Shoolini, I am part of a vibrant community of researchers and innovators. The university emphasizes cutting-edge biotechnology research and industry integration, giving me ample opportunities to engage in real-world problem-solving and lab-based exploration.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background-color: #081726; padding: 1rem 2rem;">
+  <p>Connect with me:</p>
+  <ul class="socials" style="display: flex; gap: 1rem; list-style: none; padding: 0;">
+    <li><a href="https://www.linkedin.com/in/shourya-patel-671914285" target="_blank" style="color: #4fc3f7;">LinkedIn</a></li>
+    <li><a href="https://github.com/shouryajpatel17" target="_blank" style="color: #4fc3f7;">GitHub</a></li>
+    <li><a href="mailto:shouryajpatel1555@gmail.com" style="color: #4fc3f7;">Email</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
